@@ -52,6 +52,12 @@ export interface Product {
   isDeal: boolean;
   dealExpiry?: string;
   demoNotice?: string;
+  priceType?: string;
+  capacity?: string;
+  accuracy?: string;
+  specifications?: Record<string, string> | any;
+  applications?: string[];
+  features?: string[];
   createdAt: string;
   updatedAt: string;
 }
@@ -102,6 +108,16 @@ export interface User {
   name: string;
   email: string;
   phone: string;
+  companyName?: string;
+  address?: {
+    street?: string;
+    city?: string;
+    area?: string;
+    postalCode?: string;
+  } | string | any;
+  city?: string;
+  area?: string;
+  postalCode?: string;
   role: 'admin' | 'customer';
   addresses?: UserAddress[];
 }
@@ -134,6 +150,7 @@ export interface Order {
     city: string;
     postalCode: string;
     orderNotes?: string;
+    deliveryNotes?: string;
   };
   items: OrderItem[];
   subtotal: number;
@@ -180,4 +197,40 @@ export interface InventoryHistory {
   quantity: number;
   reason: string;
   timestamp: string;
+}
+
+export interface QuoteRequest {
+  id: string;
+  quoteNumber?: string;
+  name?: string;
+  fullName?: string;
+  companyName?: string;
+  email: string;
+  phone: string;
+  product?: string;
+  productName?: string;
+  quantity?: number;
+  requirements?: string;
+  internalNotes?: string;
+  message?: string;
+  status: string;
+  createdAt: string;
+}
+
+export interface RepairRequest {
+  id: string;
+  repairNumber?: string;
+  name?: string;
+  customerName?: string;
+  location?: string;
+  preferredContactMethod?: string;
+  email: string;
+  phone: string;
+  equipmentType?: string;
+  scaleType?: string;
+  problem?: string;
+  issueDescription?: string;
+  technicianNotes?: string;
+  status: string;
+  createdAt: string;
 }

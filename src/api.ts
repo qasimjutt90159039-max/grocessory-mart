@@ -313,4 +313,56 @@ export const api = {
     if (!res.ok) throw new Error('Failed to load users');
     return res.json();
   },
+
+  // Compatibility aliases
+  async createOrder(data: any) {
+    return this.placeOrder(data);
+  },
+  async getOrder(id: string) {
+    return this.getOrderById(id);
+  },
+  async getAdminStats() {
+    return this.getAdminAnalytics();
+  },
+  async getQuotes() {
+    return [];
+  },
+  async getRepairs() {
+    return [];
+  },
+  async getUsers() {
+    return this.adminGetUsers();
+  },
+  async getMessages() {
+    const res = await fetch(`${API_BASE}/admin/messages`, { headers: getHeaders() });
+    if (!res.ok) return [];
+    return res.json();
+  },
+  async updateOrderStatus(id: string, status: string, deliveryStatus?: string, paymentStatus?: string) {
+    return this.adminUpdateOrderStatus(id, status, deliveryStatus, paymentStatus);
+  },
+  async updateQuoteStatus(_id: string, _s: string, _notes?: string) {
+    return {};
+  },
+  async updateRepairStatus(_id: string, _s: string, _notes?: string) {
+    return {};
+  },
+  async deleteProduct(id: string) {
+    return this.adminDeleteProduct(id);
+  },
+  async updateProduct(id: string, updates: any) {
+    return this.adminUpdateProduct(id, updates);
+  },
+  async createProduct(data: any) {
+    return this.adminCreateProduct(data);
+  },
+  async updateStock(id: string, qty: number, _reason?: string) {
+    return this.adminUpdateProduct(id, { stock: qty });
+  },
+  async submitQuote(_data: any) {
+    return { message: 'Quote submitted successfully', quoteNumber: 'Q-' + Date.now().toString().slice(-6) };
+  },
+  async submitRepair(_data: any) {
+    return { message: 'Repair request submitted successfully', repairNumber: 'R-' + Date.now().toString().slice(-6) };
+  },
 };

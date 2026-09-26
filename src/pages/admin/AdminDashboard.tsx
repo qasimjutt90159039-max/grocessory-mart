@@ -621,7 +621,7 @@ export const AdminDashboard: React.FC = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-700">
                     <div>
                       <span className="font-bold block text-slate-900">Customer &amp; Location:</span>
-                      {r.customerName} · Tel: {r.phone} · Area: {r.location} (Preferred: {r.preferredContactMethod.toUpperCase()})
+                      {r.customerName} · Tel: {r.phone} · Area: {r.location} {r.preferredContactMethod ? `(Preferred: ${r.preferredContactMethod.toUpperCase()})` : ''}
                     </div>
                     <div>
                       <span className="font-bold block text-slate-900">Scale Type &amp; Diagnosis:</span>
