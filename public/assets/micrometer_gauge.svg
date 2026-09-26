@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="frameCast" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#31AAA9"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="chromeThimble" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="500" fill="#F8FAFC"/>
+
+  <!-- U-Shaped Drop-Forged Frame -->
+  <path d="M120,240 C120,380 280,380 280,240" fill="none" stroke="url(#frameCast)" stroke-width="36" stroke-linecap="square"/>
+
+  <!-- Carbide Fixed Anvil (Left) -->
+  <rect x="105" y="225" width="22" height="15" fill="#334155" stroke="#0F172A" stroke-width="1.5"/>
+
+  <!-- Carbide Movable Spindle (Center) -->
+  <rect x="180" y="225" width="80" height="15" fill="#CBD5E1" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Spindle Lock Nut -->
+  <circle cx="265" cy="210" r="10" fill="#DC2626"/>
+
+  <!-- Barrel / Sleeve with Vernier Scale -->
+  <rect x="260" y="215" width="100" height="35" rx="3" fill="url(#chromeThimble)" stroke="#334155" stroke-width="1.5"/>
+  <line x1="265" y1="232" x2="355" y2="232" stroke="#0F172A" stroke-width="1.5"/>
+  <!-- Graduation ticks -->
+  <g stroke="#0F172A" stroke-width="1">
+    <line x1="275" y1="225" x2="275" y2="232"/>
+    <line x1="285" y1="225" x2="285" y2="232"/>
+    <line x1="295" y1="225" x2="295" y2="232"/>
+    <line x1="305" y1="225" x2="305" y2="232"/>
+    <line x1="315" y1="225" x2="315" y2="232"/>
+    <line x1="325" y1="225" x2="325" y2="232"/>
+    <line x1="335" y1="225" x2="335" y2="232"/>
+  </g>
+
+  <!-- Rotating Thimble with Knurled Grip -->
+  <rect x="360" y="210" width="90" height="45" rx="4" fill="url(#chromeThimble)" stroke="#334155" stroke-width="1.5"/>
+  <!-- Knurling texture on thimble -->
+  <g stroke="#64748B" stroke-width="1">
+    <line x1="410" y1="210" x2="410" y2="255"/>
+    <line x1="415" y1="210" x2="415" y2="255"/>
+    <line x1="420" y1="210" x2="420" y2="255"/>
+    <line x1="425" y1="210" x2="425" y2="255"/>
+    <line x1="430" y1="210" x2="430" y2="255"/>
+    <line x1="435" y1="210" x2="435" y2="255"/>
+    <line x1="440" y1="210" x2="440" y2="255"/>
+  </g>
+
+  <!-- Ratchet Stop (Right tip) -->
+  <rect x="450" y="222" width="40" height="21" rx="3" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+
+  <!-- Insulated Thermal Frame Grip Plate -->
+  <path d="M150,335 C170,355 230,355 250,335" fill="none" stroke="#1E293B" stroke-width="22" stroke-linecap="round"/>
+  <text x="200" y="340" fill="#31AAA9" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">0 - 25 mm  0.01 mm</text>
+
+  <!-- Technical Branding -->
+  <text x="300" y="100" fill="#16706F" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" letter-spacing="1">PRECISION EXTERNAL MICROMETER SCREW GAUGE</text>
+  <text x="300" y="120" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">CARBIDE MEASURING FACES • RATCHET CONSTANT FORCE STOP</text>
+</svg>

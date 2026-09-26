@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 650" width="100%" height="100%">
+  <defs>
+    <radialGradient id="heroGroceryGlow" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F0FDF4" />
+      <stop offset="100%" stop-color="#DCFCE7" />
+    </radialGradient>
+    <radialGradient id="basketShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(20, 83, 45, 0.35)" />
+      <stop offset="70%" stop-color="rgba(20, 83, 45, 0.08)" />
+      <stop offset="100%" stop-color="rgba(20, 83, 45, 0)" />
+    </radialGradient>
+    <linearGradient id="basketWicker" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="50%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+    <linearGradient id="oilGolden" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="40%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="650" fill="url(#heroGroceryGlow)"/>
+
+  <!-- Soft Ambient Ground Shadow -->
+  <ellipse cx="400" cy="560" rx="320" ry="32" fill="url(#basketShadow)"/>
+  <ellipse cx="400" cy="552" rx="220" ry="18" fill="rgba(20, 83, 45, 0.25)"/>
+
+  <!-- BREAD & BAGUETTE PEEKING OUT (Back layer) -->
+  <path d="M280,260 C260,180 320,130 350,140 C380,150 360,250 340,300 Z" fill="#D97706" stroke="#92400E" stroke-width="3"/>
+  <line x1="300" y1="180" x2="330" y2="190" stroke="#FEF3C7" stroke-width="4" stroke-linecap="round"/>
+  <line x1="310" y1="210" x2="340" y2="220" stroke="#FEF3C7" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- GLASS BOTTLE OF PURE OIL (Back Right) -->
+  <rect x="460" y="170" width="60" height="180" rx="14" fill="url(#oilGolden)" stroke="#CA8A04" stroke-width="2"/>
+  <rect x="475" y="140" width="30" height="35" rx="4" fill="#FEF08A"/>
+  <rect x="470" y="130" width="40" height="12" rx="3" fill="#16A34A"/>
+  <!-- Oil Label -->
+  <rect x="465" y="210" width="50" height="70" rx="4" fill="#FFFFFF" opacity="0.9"/>
+  <text x="490" y="240" fill="#166534" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">PURE</text>
+  <text x="490" y="255" fill="#CA8A04" font-family="'Space Grotesk', sans-serif" font-size="8" font-weight="bold" text-anchor="middle">OIL</text>
+
+  <!-- FRESH MILK CARTON (Back Left) -->
+  <polygon points="210,220 265,195 320,220 265,245" fill="#E2E8F0"/>
+  <rect x="210" y="220" width="55" height="140" fill="#0284C7"/>
+  <rect x="265" y="195" width="55" height="140" fill="#0369A1"/>
+  <polygon points="210,220 265,195 265,335 210,360" fill="#38BDF8"/>
+  <text x="240" y="280" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold" text-anchor="middle">MILK</text>
+  <text x="240" y="295" fill="#BAE6FD" font-family="sans-serif" font-size="8" text-anchor="middle">100% PURE</text>
+
+  <!-- THE MAIN SHOPPING BASKET -->
+  <path d="M180,310 L620,310 L560,530 L240,530 Z" fill="url(#basketWicker)" stroke="#5A2805" stroke-width="4"/>
+  <!-- Basket Wicker Cross-Weave Texture -->
+  <g stroke="#92400E" stroke-width="2.5" opacity="0.6">
+    <line x1="200" y1="350" x2="600" y2="350"/>
+    <line x1="210" y1="390" x2="590" y2="390"/>
+    <line x1="220" y1="430" x2="580" y2="430"/>
+    <line x1="230" y1="470" x2="570" y2="470"/>
+    <line x1="240" y1="510" x2="560" y2="510"/>
+    <!-- Vertical ribs -->
+    <line x1="260" y1="310" x2="280" y2="530"/>
+    <line x1="330" y1="310" x2="340" y2="530"/>
+    <line x1="400" y1="310" x2="400" y2="530"/>
+    <line x1="470" y1="310" x2="460" y2="530"/>
+    <line x1="540" y1="310" x2="520" y2="530"/>
+  </g>
+  <!-- Basket Rim Lip -->
+  <rect x="170" y="300" width="460" height="20" rx="8" fill="#B45309" stroke="#78350F" stroke-width="3"/>
+
+  <!-- Metal Tubular Arch Handles -->
+  <path d="M220,310 C220,130 580,130 580,310" fill="none" stroke="#64748B" stroke-width="12" stroke-linecap="round"/>
+  <path d="M220,310 C220,130 580,130 580,310" fill="none" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  <rect x="360" y="125" width="80" height="22" rx="6" fill="#166534" stroke="#14532D" stroke-width="2"/>
+  <text x="400" y="140" fill="#DCFCE7" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">MULTAN MART</text>
+
+  <!-- FRESH CRISP GREEN APPLES & ORANGES IN FRONT BASKET RIM -->
+  <!-- Green Apple 1 -->
+  <circle cx="340" cy="330" r="42" fill="#22C55E" stroke="#166534" stroke-width="2"/>
+  <path d="M340,290 C345,280 355,275 352,265" fill="none" stroke="#78350F" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="355" cy="275" rx="8" ry="4" fill="#86EFAC" transform="rotate(-20 355 275)"/>
+
+  <!-- Fresh Orange -->
+  <circle cx="415" cy="335" r="40" fill="#F97316" stroke="#C2410C" stroke-width="2"/>
+  <circle cx="415" cy="300" r="3" fill="#65A30D"/>
+
+  <!-- Green Apple 2 -->
+  <circle cx="475" cy="340" r="38" fill="#16A34A" stroke="#14532D" stroke-width="2"/>
+
+  <!-- Red Farm Tomato -->
+  <circle cx="280" cy="345" r="35" fill="#EF4444" stroke="#B91C1C" stroke-width="2"/>
+  <polygon points="280,310 275,315 285,315" fill="#15803D"/>
+
+  <!-- Fresh Leaf Lettuce Sprigs -->
+  <path d="M500,320 C540,280 570,300 550,335 Z" fill="#4ADE80" stroke="#16A34A" stroke-width="2"/>
+  <path d="M520,310 C560,260 590,290 560,325 Z" fill="#22C55E" stroke="#166534" stroke-width="2"/>
+
+  <!-- FLOATING FRESHNESS BADGES -->
+  <g transform="translate(600, 240)">
+    <rect x="0" y="0" width="135" height="42" rx="10" fill="#FFFFFF" stroke="#22C55E" stroke-width="2" filter="drop-shadow(0 10px 15px rgba(22, 163, 74, 0.2))"/>
+    <circle cx="22" cy="21" r="12" fill="#DCFCE7"/>
+    <text x="22" y="26" fill="#16A34A" font-size="14" text-anchor="middle">✓</text>
+    <text x="42" y="18" fill="#166534" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold">100% FRESH</text>
+    <text x="42" y="32" fill="#6B7280" font-family="sans-serif" font-size="8">Daily Verified Stock</text>
+  </g>
+
+  <g transform="translate(70, 390)">
+    <rect x="0" y="0" width="145" height="42" rx="10" fill="#FFFFFF" stroke="#16A34A" stroke-width="2" filter="drop-shadow(0 10px 15px rgba(22, 163, 74, 0.2))"/>
+    <circle cx="22" cy="21" r="12" fill="#FEF08A"/>
+    <text x="22" y="26" fill="#CA8A04" font-size="12" text-anchor="middle">★</text>
+    <text x="42" y="18" fill="#14532D" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold">LOCAL MART</text>
+    <text x="42" y="32" fill="#6B7280" font-family="sans-serif" font-size="8">Shah Rukn E Alam</text>
+  </g>
+</svg>

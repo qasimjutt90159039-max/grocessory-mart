@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tcsHeavyBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="checkerSteel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#CBD5E1"/>
+      <stop offset="50%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+    <pattern id="heavyCheck" width="20" height="20" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="10" x2="20" y2="10" stroke="#475569" stroke-width="1"/>
+      <line x1="10" y1="0" x2="10" y2="20" stroke="#475569" stroke-width="1"/>
+      <rect x="3" y="3" width="6" height="6" fill="#334155" opacity="0.4"/>
+      <rect x="13" y="13" width="6" height="6" fill="#334155" opacity="0.4"/>
+    </pattern>
+    <radialGradient id="ledGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF4D4D"/>
+      <stop offset="100%" stop-color="#990000"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="500" fill="#F8FAFC"/>
+  <!-- Heavy Ground Shadow -->
+  <ellipse cx="320" cy="435" rx="230" ry="24" fill="#020617" opacity="0.25"/>
+
+  <!-- Heavy Channel Undercarriage -->
+  <polygon points="90,380 510,380 470,430 50,430" fill="url(#tcsHeavyBase)" stroke="#0F172A" stroke-width="2"/>
+  <polygon points="50,430 470,430 470,442 50,442" fill="#0F172A"/>
+  <polygon points="470,430 510,380 510,392 470,442" fill="#020617"/>
+
+  <!-- Checker Plate Weighing Platform Surface -->
+  <polygon points="95,382 505,382 465,428 55,428" fill="url(#checkerSteel)"/>
+  <polygon points="95,382 505,382 465,428 55,428" fill="url(#heavyCheck)" opacity="0.6"/>
+
+  <!-- Heavy Cast Wheels for Warehouse Transport -->
+  <circle cx="85" cy="442" r="14" fill="#1E293B" stroke="#475569" stroke-width="2"/>
+  <circle cx="85" cy="442" r="5" fill="#94A3B8"/>
+  <circle cx="435" cy="442" r="14" fill="#1E293B" stroke="#475569" stroke-width="2"/>
+  <circle cx="435" cy="442" r="5" fill="#94A3B8"/>
+
+  <!-- High Grade Stainless Steel Display Pole -->
+  <rect x="140" y="80" width="26" height="300" rx="4" fill="url(#checkerSteel)" stroke="#334155" stroke-width="1.5"/>
+  <rect x="144" y="80" width="6" height="300" fill="#FFFFFF" opacity="0.7"/>
+
+  <!-- Heavy Backstay Guard Rail -->
+  <path d="M120,380 L120,240 L260,240 L260,380" fill="none" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Digital Indicator Head Enclosure (Industrial 500kg Series) -->
+  <rect x="85" y="60" width="135" height="110" rx="10" fill="#0F172A" stroke="#31AAA9" stroke-width="2.5"/>
+  <rect x="95" y="70" width="115" height="55" rx="5" fill="#000000"/>
+
+  <!-- Red 7-Segment LED Readout -->
+  <text x="200" y="112" fill="url(#ledGlow)" font-family="'JetBrains Mono', monospace" font-size="32" font-weight="900" text-anchor="end" letter-spacing="2">500.0</text>
+  <text x="102" y="86" fill="#31AAA9" font-family="sans-serif" font-size="9" font-weight="bold">kg</text>
+  <circle cx="106" cy="116" r="3" fill="#22C55E"/>
+
+  <!-- Touch Keypad Array -->
+  <g transform="translate(95, 135)">
+    <rect x="0" y="0" width="24" height="14" rx="2" fill="#334155"/>
+    <text x="12" y="10" fill="#FFF" font-size="7" font-weight="bold" text-anchor="middle">ZERO</text>
+    <rect x="30" y="0" width="24" height="14" rx="2" fill="#334155"/>
+    <text x="42" y="10" fill="#FFF" font-size="7" font-weight="bold" text-anchor="middle">TARE</text>
+    <rect x="60" y="0" width="24" height="14" rx="2" fill="#16706F"/>
+    <text x="72" y="10" fill="#FFF" font-size="7" font-weight="bold" text-anchor="middle">HOLD</text>
+    <rect x="90" y="0" width="25" height="14" rx="2" fill="#DC2626"/>
+    <text x="102" y="10" fill="#FFF" font-size="7" font-weight="bold" text-anchor="middle">PWR</text>
+  </g>
+
+  <!-- Technical Branding -->
+  <text x="360" y="90" fill="#16706F" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="bold" letter-spacing="1">TCS 500KG HEAVY-DUTY INDUSTRIAL FLOOR SCALE</text>
+  <text x="360" y="110" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="10">REINFORCED CHANNEL UNDERCAGE • WAREHOUSE GRADE</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="craneOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#C2410C"/>
+    </linearGradient>
+    <linearGradient id="alloyHook" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748B"/>
+      <stop offset="50%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="500" fill="#F8FAFC"/>
+
+  <!-- Top Anchor Bow Shackle (Heavy 1-Ton Spec) -->
+  <path d="M250,65 C250,25 350,25 350,65 L350,105 L250,105 Z" fill="none" stroke="url(#alloyHook)" stroke-width="20" stroke-linecap="round"/>
+  <rect x="235" y="95" width="130" height="22" rx="4" fill="#1E293B"/>
+  <circle cx="300" cy="106" r="7" fill="#F8FAFC"/>
+
+  <!-- Cast Aluminum Alloy Enclosure (Industrial Orange) -->
+  <rect x="185" y="125" width="230" height="220" rx="24" fill="url(#craneOrange)" stroke="#7C2D12" stroke-width="3"/>
+
+  <!-- Heavy Recessed Bezel -->
+  <rect x="205" y="145" width="190" height="100" rx="12" fill="#0F172A"/>
+
+  <!-- Extra-Large 38mm Red LED Digits -->
+  <rect x="215" y="155" width="170" height="80" rx="8" fill="#000000"/>
+  <text x="365" y="215" fill="#EF4444" font-family="'JetBrains Mono', monospace" font-size="44" font-weight="900" text-anchor="end">1000</text>
+  <text x="372" y="180" fill="#F97316" font-family="sans-serif" font-size="12" font-weight="bold">kg</text>
+
+  <!-- Control Buttons -->
+  <g transform="translate(210, 265)">
+    <circle cx="28" cy="22" r="18" fill="#1E293B" stroke="#FED7AA" stroke-width="2"/>
+    <text x="28" y="27" fill="#FFF" font-size="9" font-weight="bold" text-anchor="middle">ZERO</text>
+
+    <circle cx="88" cy="22" r="18" fill="#1E293B" stroke="#FED7AA" stroke-width="2"/>
+    <text x="88" y="27" fill="#FFF" font-size="9" font-weight="bold" text-anchor="middle">TARE</text>
+
+    <circle cx="148" cy="22" r="18" fill="#DC2626" stroke="#FED7AA" stroke-width="2"/>
+    <text x="148" y="27" fill="#FFF" font-size="9" font-weight="bold" text-anchor="middle">HOLD</text>
+  </g>
+
+  <!-- Heavy Swivel Latch & Lower Drop-Forged Hook -->
+  <rect x="265" y="345" width="70" height="28" rx="6" fill="#1E293B"/>
+  <circle cx="300" cy="359" r="8" fill="#CBD5E1"/>
+
+  <path d="M300,375 C300,430 220,440 220,480 C220,510 330,515 365,470 C375,445 375,415 325,395" fill="none" stroke="url(#alloyHook)" stroke-width="26" stroke-linecap="round"/>
+  <line x1="280" y1="410" x2="345" y2="465" stroke="#FACC15" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Technical Spec Caption -->
+  <text x="300" y="325" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold" text-anchor="middle" letter-spacing="1">ATS CRANE SERIES • MAX 1000 KG (1 TON)</text>
+</svg>

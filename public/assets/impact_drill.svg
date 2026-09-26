@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 650" width="100%" height="100%">
+  <defs>
+    <radialGradient id="drillStudioLighting" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </radialGradient>
+    <radialGradient id="drillGroundShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(15, 23, 42, 0.35)" />
+      <stop offset="70%" stop-color="rgba(15, 23, 42, 0.08)" />
+      <stop offset="100%" stop-color="rgba(15, 23, 42, 0)" />
+    </radialGradient>
+    <linearGradient id="drillTealMatte" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#31AAA9"/>
+      <stop offset="60%" stop-color="#16706F"/>
+      <stop offset="100%" stop-color="#0F4F4E"/>
+    </linearGradient>
+    <linearGradient id="castAluminumGear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="35%" stop-color="#CBD5E1"/>
+      <stop offset="70%" stop-color="#64748B"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <pattern id="gripGripStipple" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#334155"/>
+      <circle cx="5" cy="5" r="1" fill="#0F172A"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="650" fill="url(#drillStudioLighting)"/>
+
+  <!-- Multi-layered Contact and Diffuse Floor Shadows -->
+  <ellipse cx="430" cy="560" rx="270" ry="24" fill="url(#drillGroundShadow)"/>
+  <ellipse cx="410" cy="555" rx="190" ry="14" fill="rgba(15, 23, 42, 0.45)"/>
+
+  <!-- Keyed 13mm Industrial Chuck & Fluted Masonry Drill Bit -->
+  <!-- Fluted Drill Bit -->
+  <polygon points="70,265 150,258 150,272" fill="#94A3B8"/>
+  <line x1="80" y1="265" x2="150" y2="265" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round"/>
+  <!-- Chuck Spindle & High-Tensile Jaws -->
+  <rect x="150" y="260" width="25" height="10" fill="#475569"/>
+  <polygon points="175,235 240,230 240,295 175,290" fill="url(#castAluminumGear)" stroke="#1E293B" stroke-width="2"/>
+  <line x1="200" y1="233" x2="200" y2="292" stroke="#1E293B" stroke-width="6"/>
+  <circle cx="200" cy="245" r="4" fill="#0F172A"/>
+  <circle cx="200" cy="280" r="4" fill="#0F172A"/>
+
+  <!-- Cast Aluminum Gearbox Housing (Precision Machined Finish) -->
+  <polygon points="240,220 330,210 330,315 240,305" fill="url(#castAluminumGear)" stroke="#0F172A" stroke-width="2.5"/>
+  <!-- Mode Selector Hammer / Drill Switch on top of gear casing -->
+  <rect x="280" y="195" width="34" height="16" rx="4" fill="#DC2626" stroke="#0F172A" stroke-width="1.5"/>
+  <text x="297" y="206" fill="#FFF" font-size="8" font-weight="bold" text-anchor="middle">HAMMER</text>
+
+  <!-- Main Motor Barrel Enclosure (ATS Teal) -->
+  <path d="M330,210 L560,210 Q585,210 585,265 L585,325 Q585,350 555,355 L430,355 L430,315 L330,315 Z" fill="url(#drillTealMatte)" stroke="#0F172A" stroke-width="3"/>
+
+  <!-- Copper Armature Cooling Louvers (Subtle internal copper coil glow) -->
+  <rect x="470" y="235" width="75" height="50" rx="4" fill="#0F172A"/>
+  <g stroke="#F59E0B" stroke-width="2" opacity="0.8">
+    <line x1="480" y1="245" x2="535" y2="245"/>
+    <line x1="480" y1="255" x2="535" y2="255"/>
+    <line x1="480" y1="265" x2="535" y2="265"/>
+    <line x1="480" y1="275" x2="535" y2="275"/>
+  </g>
+  <g stroke="#0F172A" stroke-width="3">
+    <line x1="475" y1="240" x2="540" y2="240"/>
+    <line x1="475" y1="250" x2="540" y2="250"/>
+    <line x1="475" y1="260" x2="540" y2="260"/>
+    <line x1="475" y1="270" x2="540" y2="270"/>
+    <line x1="475" y1="280" x2="540" y2="280"/>
+  </g>
+
+  <!-- Ergonomic Pistol Grip Handle with Molded Rubber Textured Insert -->
+  <path d="M430,355 L490,355 Q525,365 515,500 L445,540 Q415,545 405,520 L370,410 Q355,370 400,360 Z" fill="#0F172A" stroke="#020617" stroke-width="3"/>
+  <path d="M435,370 L480,370 Q505,380 495,485 L445,520 Q425,525 418,505 L390,415 Q380,385 415,375 Z" fill="url(#gripGripStipple)"/>
+
+  <!-- Variable Speed Trigger with Forward/Reverse Rocker Switch -->
+  <path d="M380,390 C365,395 365,425 380,430 L395,430 L395,390 Z" fill="#DC2626" stroke="#0F172A" stroke-width="1.5"/>
+  <circle cx="430" cy="415" r="7" fill="#DC2626" stroke="#0F172A" stroke-width="2"/>
+
+  <!-- Heavy Rubberized Cable Strain Relief Boot & Power Cord -->
+  <path d="M425,535 L420,580 Q420,600 450,605 L520,610" fill="none" stroke="#0F172A" stroke-width="14" stroke-linecap="round"/>
+  <path d="M425,535 L420,580 Q420,600 450,605 L520,610" fill="none" stroke="#334155" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Auxiliary Multi-Position 360-degree Side Handle & Steel Depth Gauge -->
+  <rect x="310" y="200" width="26" height="120" rx="6" fill="#0F172A"/>
+  <rect x="300" y="320" width="46" height="120" rx="10" fill="#1E293B" stroke="#0F172A" stroke-width="2.5"/>
+  <!-- Steel Depth Stop Rod with Millimeter Engravings -->
+  <line x1="120" y1="195" x2="410" y2="195" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round"/>
+  <rect x="315" y="185" width="16" height="20" rx="3" fill="#F59E0B"/>
+
+  <!-- Studio Header Overlay -->
+  <g transform="translate(420, 100)">
+    <text x="0" y="0" fill="#16706F" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="bold" letter-spacing="1.5">PROFESSIONAL 13mm IMPACT HAMMER DRILL</text>
+    <text x="0" y="20" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="10">650W HEAVY COPPER ARMATURE • AALIYAN TRADER'S SCALES</text>
+  </g>
+</svg>

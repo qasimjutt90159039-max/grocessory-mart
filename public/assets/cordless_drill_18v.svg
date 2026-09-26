@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="drillBodyTeal" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#31AAA9"/>
+      <stop offset="100%" stop-color="#16706F"/>
+    </linearGradient>
+    <linearGradient id="batteryPack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="500" fill="#F8FAFC"/>
+  <ellipse cx="320" cy="445" rx="180" ry="16" fill="#0F172A" opacity="0.12"/>
+
+  <!-- Keyless Ratcheting Chuck (Front) -->
+  <polygon points="120,205 170,195 170,235 120,225" fill="#334155" stroke="#0F172A" stroke-width="2"/>
+  <line x1="145" y1="198" x2="145" y2="232" stroke="#64748B" stroke-width="3"/>
+
+  <!-- Torque Adjustment Clutch Ring (18+1 settings) -->
+  <polygon points="170,190 220,185 220,245 170,240" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+  <g stroke="#CBD5E1" stroke-width="1.5">
+    <line x1="180" y1="192" x2="180" y2="238"/>
+    <line x1="195" y1="189" x2="195" y2="241"/>
+    <line x1="210" y1="187" x2="210" y2="243"/>
+  </g>
+
+  <!-- 2-Speed Gear Selector (Top) -->
+  <rect x="250" y="170" width="30" height="12" rx="3" fill="#DC2626"/>
+  <text x="265" y="179" fill="#FFF" font-size="7" font-weight="bold" text-anchor="middle">1 / 2</text>
+
+  <!-- Main Motor Barrel (Teal) -->
+  <path d="M220,185 L390,185 Q410,185 410,220 L410,240 Q410,260 380,265 L320,265 L320,245 L220,245 Z" fill="url(#drillBodyTeal)" stroke="#0F172A" stroke-width="2.5"/>
+
+  <!-- Ergonomic Rubberized Pistol Handle -->
+  <path d="M300,265 L350,265 Q370,270 365,370 L345,395 Q330,400 315,390 L275,320 Q265,280 300,265 Z" fill="#1E293B" stroke="#0F172A" stroke-width="2.5"/>
+
+  <!-- Variable Speed Trigger with Direction Switch -->
+  <path d="M285,285 C275,290 275,310 285,315 L298,315 L298,285 Z" fill="#DC2626"/>
+  <circle cx="310" cy="275" r="4.5" fill="#334155"/>
+
+  <!-- LED Work Light -->
+  <polygon points="265,335 275,335 270,345" fill="#FACC15"/>
+
+  <!-- Detachable 18V Lithium-Ion Battery Pack with Fuel Gauge -->
+  <rect x="270" y="390" width="130" height="50" rx="8" fill="url(#batteryPack)" stroke="#0F172A" stroke-width="2.5"/>
+  <rect x="270" y="430" width="130" height="10" rx="3" fill="#DC2626"/>
+  <!-- 3-bar LED Fuel Gauge -->
+  <g transform="translate(290, 405)">
+    <rect x="0" y="0" width="8" height="12" rx="1" fill="#22C55E"/>
+    <rect x="12" y="0" width="8" height="12" rx="1" fill="#22C55E"/>
+    <rect x="24" y="0" width="8" height="12" rx="1" fill="#22C55E"/>
+  </g>
+
+  <!-- Technical Branding -->
+  <text x="320" y="90" fill="#16706F" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="bold" letter-spacing="1">18V CORDLESS LITHIUM-ION IMPACT DRILL / DRIVER</text>
+  <text x="320" y="110" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="10">2-SPEED ALL-METAL GEARBOX • 18+1 TORQUE STAGES</text>
+</svg>

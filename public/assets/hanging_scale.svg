@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="craneBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#31AAA9"/>
+      <stop offset="100%" stop-color="#16706F"/>
+    </linearGradient>
+    <linearGradient id="steelHook" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="50%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="500" fill="#F8FAFC"/>
+
+  <!-- Top Suspension Shackle -->
+  <path d="M260,70 C260,35 340,35 340,70 L340,110 L260,110 Z" fill="none" stroke="url(#steelHook)" stroke-width="16" stroke-linecap="round"/>
+  <rect x="250" y="100" width="100" height="18" rx="4" fill="#334155"/>
+  <circle cx="300" cy="109" r="6" fill="#F8FAFC"/>
+
+  <!-- Main Aluminum Scale Housing -->
+  <rect x="200" y="125" width="200" height="210" rx="20" fill="url(#craneBody)" stroke="#0F172A" stroke-width="3"/>
+
+  <!-- Heavy Cast Ribs / Rim -->
+  <rect x="220" y="145" width="160" height="90" rx="10" fill="#0F172A"/>
+
+  <!-- LCD / LED Readout -->
+  <rect x="230" y="155" width="140" height="70" rx="6" fill="#000000"/>
+  <text x="350" y="205" fill="#EF4444" font-family="'JetBrains Mono', monospace" font-size="34" font-weight="bold" text-anchor="end">485.5</text>
+  <text x="355" y="175" fill="#31AAA9" font-family="sans-serif" font-size="12" font-weight="bold">kg</text>
+
+  <!-- Control Membrane Keys -->
+  <g transform="translate(225, 255)">
+    <circle cx="25" cy="20" r="16" fill="#1E293B" stroke="#DDF6F5" stroke-width="1.5"/>
+    <text x="25" y="24" fill="#FFFFFF" font-size="8" font-weight="bold" text-anchor="middle">ZERO</text>
+
+    <circle cx="75" cy="20" r="16" fill="#1E293B" stroke="#DDF6F5" stroke-width="1.5"/>
+    <text x="75" y="24" fill="#FFFFFF" font-size="8" font-weight="bold" text-anchor="middle">TARE</text>
+
+    <circle cx="125" cy="20" r="16" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="125" y="24" fill="#FFFFFF" font-size="8" font-weight="bold" text-anchor="middle">POWER</text>
+  </g>
+
+  <!-- Lower Hook Swivel & Link -->
+  <rect x="270" y="335" width="60" height="25" rx="4" fill="#334155"/>
+  <circle cx="300" cy="347" r="7" fill="#CBD5E1"/>
+
+  <!-- Heavy Drop Forged Hook with Safety Latch -->
+  <path d="M300,360 C300,410 230,420 230,460 C230,490 320,495 350,450 C360,430 360,400 320,380" fill="none" stroke="url(#steelHook)" stroke-width="22" stroke-linecap="round"/>
+  <!-- Safety spring latch -->
+  <line x1="285" y1="390" x2="330" y2="440" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Technical Markings -->
+  <text x="300" y="318" fill="#DDF6F5" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold" text-anchor="middle" letter-spacing="1">MAX 1000 kg • D=0.5 kg</text>
+</svg>
